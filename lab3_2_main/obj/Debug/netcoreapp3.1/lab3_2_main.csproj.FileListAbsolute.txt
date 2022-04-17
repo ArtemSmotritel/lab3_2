@@ -12,3 +12,17 @@ C:\Users\artemaybe\Documents\university\ptam\lab3_2\lab3_2_main\obj\Debug\netcor
 C:\Users\artemaybe\Documents\university\ptam\lab3_2\lab3_2_main\obj\Debug\netcoreapp3.1\lab3_2_main.dll
 C:\Users\artemaybe\Documents\university\ptam\lab3_2\lab3_2_main\obj\Debug\netcoreapp3.1\lab3_2_main.pdb
 C:\Users\artemaybe\Documents\university\ptam\lab3_2\lab3_2_main\obj\Debug\netcoreapp3.1\lab3_2_main.genruntimeconfig.cache
+D:\Lab3_2\lab3_2_main\bin\Debug\netcoreapp3.1\lab3_2_main.exe
+D:\Lab3_2\lab3_2_main\bin\Debug\netcoreapp3.1\lab3_2_main.deps.json
+D:\Lab3_2\lab3_2_main\bin\Debug\netcoreapp3.1\lab3_2_main.runtimeconfig.json
+D:\Lab3_2\lab3_2_main\bin\Debug\netcoreapp3.1\lab3_2_main.runtimeconfig.dev.json
+D:\Lab3_2\lab3_2_main\bin\Debug\netcoreapp3.1\lab3_2_main.dll
+D:\Lab3_2\lab3_2_main\bin\Debug\netcoreapp3.1\lab3_2_main.pdb
+D:\Lab3_2\lab3_2_main\obj\Debug\netcoreapp3.1\lab3_2_main.csproj.AssemblyReference.cache
+D:\Lab3_2\lab3_2_main\obj\Debug\netcoreapp3.1\lab3_2_main.GeneratedMSBuildEditorConfig.editorconfig
+D:\Lab3_2\lab3_2_main\obj\Debug\netcoreapp3.1\lab3_2_main.AssemblyInfoInputs.cache
+D:\Lab3_2\lab3_2_main\obj\Debug\netcoreapp3.1\lab3_2_main.AssemblyInfo.cs
+D:\Lab3_2\lab3_2_main\obj\Debug\netcoreapp3.1\lab3_2_main.csproj.CoreCompileInputs.cache
+D:\Lab3_2\lab3_2_main\obj\Debug\netcoreapp3.1\lab3_2_main.dll
+D:\Lab3_2\lab3_2_main\obj\Debug\netcoreapp3.1\lab3_2_main.pdb
+D:\Lab3_2\lab3_2_main\obj\Debug\netcoreapp3.1\lab3_2_main.genruntimeconfig.cache
