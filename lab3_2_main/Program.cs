@@ -1,4 +1,5 @@
 ﻿using System;
+using 
 
 namespace lab3_2_main
 {
@@ -9,6 +10,7 @@ namespace lab3_2_main
             Console.WriteLine("First commit");
             Console.WriteLine("kkk");
             Console.WriteLine("gg guys");
+            Console.WriteLine(/*message*/);
         }
     }
 }
