@@ -8,6 +8,7 @@ namespace lab3_2_main
         {
             Console.WriteLine("First commit");
             Console.WriteLine("kkk");
+            Console.WriteLine("gg guys");
         }
     }
 }
