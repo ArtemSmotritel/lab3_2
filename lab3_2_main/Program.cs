@@ -23,7 +23,7 @@ namespace lab3_2_main
         static void Main(string[] args)
         {
             Student[] studs = ReadData("input.txt");
-            runMenu(studs);
+            runMenu(studs);            
         }
     }
 }
