@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace lab3_2_main
 {
     class Var13
     {
-        private static List<string> SurnamesSkippedTwoAndMoreTests = new List<string>();
+        private static List<string> SurnamesSkippedTwoAndMoreTests;
         private static void PrintStudentsSkippedTests()
         {
             Console.WriteLine("Прізвища студентів, які пропустили більше двох іспитів:");
@@ -15,25 +14,26 @@ namespace lab3_2_main
                 Console.WriteLine(surname);
             }            
         }
-        public static void DoVar13(Student[] students)
+        public static void DoVar13(List<Student> students)
         {
+            SurnamesSkippedTwoAndMoreTests = new List<string>();
             CheckSurnamesForTwoSkippedTests(students);
             if (SurnamesSkippedTwoAndMoreTests.Count == 0)            
                 Console.WriteLine("Жоден студент не пропустив більше 2 іспитів");            
             else            
                 PrintStudentsSkippedTests();            
         }
-        private static void CheckSurnamesForTwoSkippedTests(Student[] students)
+        private static void CheckSurnamesForTwoSkippedTests(List<Student> students)
         {
-            for (int i = 0; i < students.Length; i++)
+            for (int i = 0; i < students.Count; i++)
             {
-                if (StudentSkippedThree(students[i]))
+                if (StudentSkippedTwoMore(students[i]))
                 {
                     SurnamesSkippedTwoAndMoreTests.Add(students[i].surName);
                 }
             }
         }
-        private static bool StudentSkippedThree(Student student)
+        private static bool StudentSkippedTwoMore(Student student)
         {
             return student.informaticsMark == '-' && student.mathematicsMark == '-' && student.physicsMark == '-';
         }
