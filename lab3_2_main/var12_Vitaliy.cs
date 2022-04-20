@@ -5,7 +5,7 @@ namespace lab3_2_main
 {
     class Var12
     {
-        static void DoVar12(List<Student> students)
+        public static void DoVar12(List<Student> students)
         {
             double avgScholarship = 0;
             int n = 0;

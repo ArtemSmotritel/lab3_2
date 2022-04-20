@@ -3,27 +3,34 @@ using System.Text;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace lab3_2_main
 {
     class Program
     {
-        static Student[] ReadData(string fileName)
+        static List<Student> ReadData(string fileName)
         {
-            // TODO   implement this method.
-            // It should read the file whose fileName has been passed and fill 
+            List<Student> students = new List<Student>();
+            StreamReader sr = new StreamReader(fileName);
+            string line = sr.ReadLine();
+            while (line != null)
+            {
+                students.Add(new Student(line));
+                line = sr.ReadLine();
+            }
+            return students;
         }
 
-        static void runMenu(Student[] studs)
+        static void RunMenu(List<Student> students)
         {
-            // TODO   implement this method
-            // It should call method(s) for concrete variant(s)
+            
         }
 
         static void Main(string[] args)
         {
-            Student[] studs = ReadData("input.txt");
-            runMenu(studs);            
+            List<Student> students = ReadData("input.txt");
+            RunMenu(students);
         }
     }
 }
