@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace lab3_2_main
 {
@@ -15,7 +14,7 @@ namespace lab3_2_main
                 Console.WriteLine(surname);
             }            
         }
-        public static void DoVar13(Student[] students)
+        public static void DoVar13(List<Student> students)
         {
             CheckSurnamesForTwoSkippedTests(students);
             if (SurnamesSkippedTwoAndMoreTests.Count == 0)            
@@ -23,17 +22,17 @@ namespace lab3_2_main
             else            
                 PrintStudentsSkippedTests();            
         }
-        private static void CheckSurnamesForTwoSkippedTests(Student[] students)
+        private static void CheckSurnamesForTwoSkippedTests(List<Student> students)
         {
-            for (int i = 0; i < students.Length; i++)
+            for (int i = 0; i < students.Count; i++)
             {
-                if (StudentSkippedThree(students[i]))
+                if (StudentSkippedTwoMore(students[i]))
                 {
                     SurnamesSkippedTwoAndMoreTests.Add(students[i].surName);
                 }
             }
         }
-        private static bool StudentSkippedThree(Student student)
+        private static bool StudentSkippedTwoMore(Student student)
         {
             return student.informaticsMark == '-' && student.mathematicsMark == '-' && student.physicsMark == '-';
         }
