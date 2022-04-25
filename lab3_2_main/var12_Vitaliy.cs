@@ -1,18 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace lab3_2_main
 {
     class Var12
     {
-        static void DoVar12(Student[] studs)
+        public static void DoVar12(List<Student> students)
         {
             double avgScholarship = 0;
             int n = 0;
-            for (int i = 0; i <= studs.Length; i++)
+            for (int i = 0; i <= students.Count; i++)
             {
-                if (studs[i].scholarship != 0)
+                if (students[i].scholarship != 0)
                 {
-                    avgScholarship += studs[i].scholarship;
+                    avgScholarship += students[i].scholarship;
                     n++;
                 }
             }
@@ -22,11 +23,11 @@ namespace lab3_2_main
                 avgScholarship /= n;
                 Console.WriteLine("Середня стипендія " + avgScholarship);
                 Console.WriteLine("Студенти стипендія яких більш ніж на 20% менша середньої");
-                for (int i = 0; i <= studs.Length; i++)
+                for (int i = 0; i <= students.Count; i++)
                 {
-                    if (studs[i].scholarship != 0 && studs[i].scholarship < avgScholarship * 0.8)
+                    if (students[i].scholarship != 0 && students[i].scholarship < avgScholarship * 0.8)
                     {
-                        Console.WriteLine(studs[i].surName + " " + studs[i].firstName + " " + studs[i].patronymic);
+                        Console.WriteLine(students[i].surName + " " + students[i].firstName + " " + students[i].patronymic);
                     }
                 }
             }
