@@ -26,3 +26,17 @@ D:\Lab3_2\lab3_2_main\obj\Debug\netcoreapp3.1\lab3_2_main.csproj.CoreCompileInpu
 D:\Lab3_2\lab3_2_main\obj\Debug\netcoreapp3.1\lab3_2_main.dll
 D:\Lab3_2\lab3_2_main\obj\Debug\netcoreapp3.1\lab3_2_main.pdb
 D:\Lab3_2\lab3_2_main\obj\Debug\netcoreapp3.1\lab3_2_main.genruntimeconfig.cache
+C:\Lab3\lab3_2\lab3_2_main\bin\Debug\netcoreapp3.1\lab3_2_main.exe
+C:\Lab3\lab3_2\lab3_2_main\bin\Debug\netcoreapp3.1\lab3_2_main.deps.json
+C:\Lab3\lab3_2\lab3_2_main\bin\Debug\netcoreapp3.1\lab3_2_main.runtimeconfig.json
+C:\Lab3\lab3_2\lab3_2_main\bin\Debug\netcoreapp3.1\lab3_2_main.runtimeconfig.dev.json
+C:\Lab3\lab3_2\lab3_2_main\bin\Debug\netcoreapp3.1\lab3_2_main.dll
+C:\Lab3\lab3_2\lab3_2_main\bin\Debug\netcoreapp3.1\lab3_2_main.pdb
+C:\Lab3\lab3_2\lab3_2_main\obj\Debug\netcoreapp3.1\lab3_2_main.csproj.AssemblyReference.cache
+C:\Lab3\lab3_2\lab3_2_main\obj\Debug\netcoreapp3.1\lab3_2_main.GeneratedMSBuildEditorConfig.editorconfig
+C:\Lab3\lab3_2\lab3_2_main\obj\Debug\netcoreapp3.1\lab3_2_main.AssemblyInfoInputs.cache
+C:\Lab3\lab3_2\lab3_2_main\obj\Debug\netcoreapp3.1\lab3_2_main.AssemblyInfo.cs
+C:\Lab3\lab3_2\lab3_2_main\obj\Debug\netcoreapp3.1\lab3_2_main.csproj.CoreCompileInputs.cache
+C:\Lab3\lab3_2\lab3_2_main\obj\Debug\netcoreapp3.1\lab3_2_main.dll
+C:\Lab3\lab3_2\lab3_2_main\obj\Debug\netcoreapp3.1\lab3_2_main.pdb
+C:\Lab3\lab3_2\lab3_2_main\obj\Debug\netcoreapp3.1\lab3_2_main.genruntimeconfig.cache
