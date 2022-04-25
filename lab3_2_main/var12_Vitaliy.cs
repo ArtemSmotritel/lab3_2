@@ -5,32 +5,42 @@ namespace lab3_2_main
 {
     class Var12
     {
-        public static void DoVar12(List<Student> students)
+        static double FindAvgScholarship (List<Student> students)
         {
-            double avgScholarship = 0;
+            double sumScholarship = 0;
             int n = 0;
-            for (int i = 0; i <= students.Count; i++)
+            for (int i = 0; i < students.Count; i++)
             {
                 if (students[i].scholarship != 0)
                 {
-                    avgScholarship += students[i].scholarship;
+                    sumScholarship += students[i].scholarship;
                     n++;
                 }
             }
-            if (n == 0) Console.WriteLine("Таких студентів немає");
-            else
+            if (n == 0)
             {
-                avgScholarship /= n;
-                Console.WriteLine("Середня стипендія " + avgScholarship);
-                Console.WriteLine("Студенти стипендія яких більш ніж на 20% менша середньої");
-                for (int i = 0; i <= students.Count; i++)
+                Console.WriteLine("Ніхто не отримує стипендію");
+                return 0;
+            }
+            else return sumScholarship / n;
+        }
+        static void LessScholarshipStudents(List<Student> students, double avgScholarship)
+        {
+            Console.WriteLine("Студенти з стипендією на 20% менше середньої");
+            for (int i = 0; i < students.Count; i++)
+            {
+                if (students[i].scholarship != 0 && students[i].scholarship < avgScholarship * 0.8)
                 {
-                    if (students[i].scholarship != 0 && students[i].scholarship < avgScholarship * 0.8)
-                    {
-                        Console.WriteLine(students[i].surName + " " + students[i].firstName + " " + students[i].patronymic);
-                    }
+                    Console.WriteLine(students[i].surName + " " + students[i].firstName + " " + students[i].patronymic);
                 }
             }
+        }
+        public static void DoVar12(List<Student> students)
+        {
+            double avgScholarship = FindAvgScholarship(students);
+            Console.WriteLine("Середня стипендія " + avgScholarship);
+            LessScholarshipStudents(students, avgScholarship);
+            Console.WriteLine();
         }
     }
 }
