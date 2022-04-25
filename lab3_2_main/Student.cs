@@ -20,6 +20,16 @@ namespace lab3_2_main
         {
             // TODO   you SHOULD IMPLEMENT constructor with exactly this signature
             // lineWithAllData is string contating all data about one student, as described in statement
+            string[] separatedData = lineWithAllData.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            surName = separatedData[0];
+            firstName= separatedData[1];
+            patronymic= separatedData[2];
+            sex = char.Parse(separatedData[3]);
+            dateOfBirth = separatedData[4];
+            mathematicsMark = char.Parse(separatedData[5]);
+            physicsMark= char.Parse(separatedData[6]);
+            informaticsMark= char.Parse(separatedData[7]);
+            scholarship = int.Parse(separatedData[8]);
         }
     }
 }
