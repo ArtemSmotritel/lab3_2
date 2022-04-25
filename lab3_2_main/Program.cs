@@ -40,6 +40,9 @@ namespace lab3_2_main
                     case 2:
                         Var13.DoVar13(studs);
                         break;
+                    case 0:
+                        Console.WriteLine("Програма завершує своє виконання");
+                        break;
                     default:
                         Console.WriteLine("Введено не коректний варіант. Повторіть спробу");
                         break;
