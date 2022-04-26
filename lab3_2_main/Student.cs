@@ -18,8 +18,6 @@ namespace lab3_2_main
 
         public Student(string lineWithAllData)
         {
-            // TODO   you SHOULD IMPLEMENT constructor with exactly this signature
-            // lineWithAllData is string contating all data about one student, as described in statement
             string[] separatedData = lineWithAllData.Split(' ', StringSplitOptions.RemoveEmptyEntries);
             surName = separatedData[0];
             firstName= separatedData[1];
