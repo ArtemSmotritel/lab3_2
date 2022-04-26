@@ -17,11 +17,7 @@ namespace lab3_2_main
                     n++;
                 }
             }
-            if (n == 0)
-            {
-                Console.WriteLine("Ніхто не отримує стипендію");
-                return 0;
-            }
+            if (n == 0) return 0;
             else return sumScholarship / n;
         }
         static void LessScholarshipStudents(List<Student> students, double avgScholarship)
@@ -38,9 +34,12 @@ namespace lab3_2_main
         public static void DoVar12(List<Student> students)
         {
             double avgScholarship = FindAvgScholarship(students);
-            Console.WriteLine("Середня стипендія " + avgScholarship);
-            LessScholarshipStudents(students, avgScholarship);
-            Console.WriteLine();
+            if (avgScholarship != 0)
+            {
+                Console.WriteLine("Середня стипендія " + avgScholarship);
+                LessScholarshipStudents(students, avgScholarship);
+            }
+            else Console.WriteLine("Ніхто не отримує стипендію");
         }
     }
 }
